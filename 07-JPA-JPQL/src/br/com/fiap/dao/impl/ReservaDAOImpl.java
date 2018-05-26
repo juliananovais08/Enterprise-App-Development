@@ -39,10 +39,5 @@ public class ReservaDAOImpl extends GenericDAOImpl<Reserva,Integer> implements R
 		return em.createNamedQuery("Reserva.contarPorEstadoCliente",Long.class).setParameter("palavra", uf).getSingleResult();
 	}
 	
-	
 
 }
-
-
-
-
